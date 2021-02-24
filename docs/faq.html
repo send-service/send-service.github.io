@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>$end, 간편한 편의점 송금</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="img/send_app_icon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
+    <link href="css/style_v2.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            var faq = [
+                {
+                    "faq_title": "SEND 충전/송금 한도는 어떻게 되나요?",
+                    "faq_body": "• 충전/송금 한도는 회원등급에 따라 차등 적용됩니다."
+                },
+                {
+                    "faq_title": "SEND 송금 수수료 정책을 알려주세요.",
+                    "faq_body": "• 1회 송금액 기준 10만원이하 수수료 500원 / 10만원초과 수수료 1,000원\n• 연락처송금은 이벤트 기간중 무료"
+                },
+                {
+                    "faq_title": "거래 내용을 증빙하기위한 서류는 어디서 발급받을 수 있나요?",
+                    "faq_body": "• CU편의점에서 발행되는 충전/송금/결제 영수증으로 활용 가능하며, 센드 앱 내 '이용내역' 탭에서 송금확인증 다운로드가 가능합니다."
+                },
+                {
+                    "faq_title": "SEND 송금 가능 은행을 알려주세요.",
+                    "faq_body": "• 모든 금융사에 송금이 가능합니다."
+                },
+                {
+                    "faq_title": "SEND는 시스템 점검없이 진짜 24시간 사용이 가능한가요?",
+                    "faq_body": "•  SEND는 정기점검이 없으나, 송금중계 은행 혹은 수신은행의 시스템 점검 때는 송금이 불가합니다. 수신은행의 일별 점검시간은 23:40~00:15, 송금중계은행의 월간정기점검은 둘째주 일요일 새벽 1~5시입니다.\n\n• 은행 점검시간 동안 송금 이외에 SEND 충전/결제 기능은 이용이 가능합니다."
+                },
+                {
+                    "faq_title": "SEND 충전/송금/결제 후 취소가 가능한가요?",
+                    "faq_body": "• 충전/결제의 경우 CU편의점에서 수령한 영수증을 지참하고, 재방문하시면 취소 및 환불이 가능합니다. 해당 금액은 고객님의 SEND 잔액으로 환불됩니다.\n단, 충전 후 잔액을 일부라도 사용했다면 충전 취소가 불가능합니다.\n\n• 계좌로 송금한 경우는 실시간으로 계좌로 송금이 완료되기에 취소가 불가능합니다.\n\n• 연락처송금을 이용한 경우는 받는 사람이 금액을 받기 전까지는 수동으로 취소 가능하며 24시간이내에 금액을 수령하지 않으면 자동으로 송금이 취소됩니다. 송금이 취소될 경우, 송금액은 보낸 회원님의 충전잔액으로 자동 환불됩니다."
+                },
+                {
+                    "faq_title": "돈을 잘못 보냈어요.",
+                    "faq_body": "• 사기 거래 관련 먼저 CU 편의점에서 받은 입금 영수증을 지참합니다. 경찰서에 입금 영수증을 제출해 신고합니다. 그 외에 확보한 증거가 있다면 함께 제출합니다. [참고 : 인터넷 물품사기 이렇게 대처하세요] 사기 거래 관련 송금 건은 경찰 측으로 신고 진행해주셔야 하며, 착오송금 접수가 불가합니다. \n\n• 업체 측 계좌로 잘못 입금하신 경우 [쇼핑몰 등] 업체측으로 직접 문의하여 반환을 요청해주세요. SEND에서는 수취계좌의 연락처를 알지 못하기 때문에, 직접 문의하시는 게 가장 빠르고 정확합니다. \n\n• 지인에게 잘못 보낸 경우 지인에게 잘못 송금한 경우 역시 직접 연락하여 상황 설명 후 다시 반환 받는 방법이 가장 빠르고 정확합니다. 반환을 거부하는 경우에는 부득이 경찰에 신고하여 처리하셔야 합니다. \n\n• 계좌번호 오입력으로 인한 송금의 경우: 센드 고객센터(1877-1255) 혹은 1:1문의를 통하여 아래의 정보를 작성해주시면 오송금반환신청 절차를 진행해 드립니다. \n\n①오송금한 고객님의 정보 \n②실제 보내려고 한 계좌정보(예금주명/은행/계좌번호/금액) \n③잘못보낸 계좌정보(예금주명/은행/계좌번호/금액) \n\n오송금 반환요청절차는 \n-은행이 고객님(송금인)을 대신해 수신자에게 연락하여 오송금반환 요청을 진행하나 수신자측 연락이 불가하거나 반환을 거부하더라도 개인정보를 고객님께 제공할 수 없습니다.(신용정보의 이용 및 보호에 관한 법률 제32조 제1항) \n\n-오송금 반환요청은 최대한 신속히 처리하나 타행오송금 등은 최소 7일 이상의 시일이 소요될 수 있으며, \n-수신인이 거부하여 돌려받지 못할 경우 부득이 고객님(송금인)이 부당이득반환소송을 진행해야 합니다."
+                },
+                {
+                    "faq_title": "송금요청은 완료됐는데 실제로는 송금이 안됐어요.",
+                    "faq_body": "• 중계 은행 사정에 따라 송금완료 시점까지 다소 시간이 소요될수 있습니다.\n\n• 만약 일정시간이 지난 시점에도 송금이 완료되지 않는 경우에는 고객님께 환불처리 됩니다."
+                },
+                {
+                    "faq_title": "SEND 결제란 무엇인가요?",
+                    "faq_body": "• SEND에 충전하거나 송금받은 잔액으로 CU 편의점 등에서 물품 등을 구매할 때 현금처럼 사용[결제]하는 것을 말합니다."
+                },
+                {
+                    "faq_title": "SEND 결제가 가능한 곳은 어디인가요?",
+                    "faq_body": "• 전국 CU편의점에서 SEND에 충전 후 결제 가능하며, 점차 확대할 예정입니다."
+                },
+                {
+                    "faq_title": "공식적으로 인증된 서비스가 맞나요?",
+                    "faq_body": "• SEND를 운영하는 회사인 통통 보안과 관제 시스템에 대한 금융감독원의 실사와 금융위원회의 승인을 통해 전자금융업으로 공식 등록된 기업입니다. 또한, 은행과의 공식 업무 제휴를 통해 SEND를 운영하고 있기 때문에 공식적으로 인증된 서비스가 맞습니다."
+                },
+                {
+                    "faq_title": "휴대폰번호나 계좌번호 등 저의 개인 정보는 어떻게 보호되고 있나요?",
+                    "faq_body": "• SEND는 스마트폰에서 서버에 이르는 모든 구간에서 금융정보를 암호화하기 때문에 중요한 데이터를 안전하게 저장하고 있습니다. 또한, 암호화 이외에도 다양한 수단을 통하여 개인 정보를 보호하고 있습니다."
+                },
+                {
+                    "faq_title": "가입이나 송금이 너무 쉬운 것 같아 걱정인데요. SEND는 안전한가요?",
+                    "faq_body": "• SEND는 계성 생성은 굉장히 쉽지만 이후 모든 과정은 철저하게 보안과 암호화되어 처리되기에 안전에는 염려하실 필요 없습니다."
+                },
+                {
+                    "faq_title": "쿨링타임이란?",
+                    "faq_body": "• 충전 후, 일정시간(현재20분)이 경과해야만 송금/결제가 가능한 제도입니다."
+                },
+                {
+                    "faq_title": "충전잔액과 결제/송금 가능 금액이 차이가 나요.",
+                    "faq_body": "• 충전 후, 20분간 쿨링타임 적용으로 충전잔액과 결제/송금 가능 금액이 차이날 수 있습니다."
+                },
+                {
+                    "faq_title": "연락처 송금으로 받은 돈은 어떻게 확인하나요?",
+                    "faq_body": "• [받는 사람이 SEND 회원인 경우] – SEND앱을 통해 알림과 회원님의 휴대폰번호로 SMS가 발송됩니다. \n• [받는 사람이 SEND 회원이 아닌 경우] – 휴대폰번호로 SMS가 발송됩니다.\n"
+                },
+                {
+                    "faq_title": "연락처 송금으로 받은 돈은 어떻게 수령하나요?",
+                    "faq_body": "• [받는 사람이 SEND 회원인 경우] \n‘이용내역 -> 입금 인증 대기 -> 본인확인 -> 나중에 받기 혹은 지금 받기 선택’의 순서로 받은 금액을 수령할 수 있습니다. \n• [받는 사람이 SEND 회원이 아닌 경우]\n‘SMS에서 링크를 눌러 SEND 앱 설치 -> 회원가입 -> 이용내역 -> 입금 인증 대기 -> 본인확인 -> 나중에 받기 혹은 지금 받기 선택’의 순서로 받은 금액을 수령할 수 있습니다"
+                },
+                {
+                    "faq_title": "연락처 송금을 잘못 보냈어요. 취소할 수 있나요?",
+                    "faq_body": "•  받는 사람이 ‘본인확인’을 하기 전까지 취소 가능하며 ‘이용내역->연락처 송금 대기-> 송금 취소’ 순서로 진행하세요"
+                },
+                {
+                    "faq_title": "입금대기 상태에서 돈을 수령하려면 어떻게 하나요?",
+                    "faq_body": "•  ‘이용내역->입금대기->지금받기 선택’을 하시면 입금액 수령이 가능합니다. 단, 보유한도를 초과하는 경우에는 입금액 지금 받기가 불가능합니다. 보유한도 초과로 입금액 수령이 불가한 경우, 보유한 잔액을 소진 후 다시 시도하세요.\n"
+                }
+            ];
+
+            faq.forEach(function(item){
+                var brk = item.faq_body.split('\n');
+                var res = brk.join("<br>");
+                $('#dataList').append('<ul class="faq_title"><li>'+item.faq_title+'</li><li class="faq_body">'+res+'</li></ul>')
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="section head sub">
+        <div class="header">
+            <div class="header_wrap dl">
+                <a href="index.html" class="logo"></a>
+                <a href="javascript:void(0);" class="nav_menu"></a>
+                <div class="navigation">
+                    <a href="index.html" class="nav_a">안내</a>
+                    <a href="javascript:eventOpen();" class="nav_b">이벤트</a>
+                    <a href="faq.html" class="nav_c">FAQ</a>
+                    <a href="javascript:void(0);" class="nav_d">1:1 문의</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section sub_wrap">
+        <div class="sub_content">
+            <div class="tp_title">FAQ</div>
+            <div class="tp_cont">
+                <ul id="dataList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="section footer dl">
+        <div class="section_body dl">
+            <div class="logo_b">
+                <img src="img/logo_g.png" alt="Send, 간편한 편의점 송금">
+            </div>
+            <div class="footer_wrap">
+                <div class="terms">
+                    <a href="terms.html">서비스 이용약관</a>
+                    <a href="policy.html">개인정보처리방침</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <h3>(주)통통</h3>
+                <ul>
+                    <li>사업자 등록번호 120-81-90256<span>|</span>대표이사 최상길<span class="m_n">|</span><br class="m">주소 서울시 강남구 언주로170길16, 2층<span>|</span>고객센터 1877-1255</li>
+                    <li>Copyright tongtong corp, All rights reserved</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="layer_popup event">
+        <div class="layer_bg"></div>
+        <div class="layer_wrap">
+            <div class="layer_content">
+                <div class="layer_title dl">
+                    <div class="lt_cont">
+                        <ul>
+                            <li>1원초대 & 충전 이벤트</li>
+                            <li>2월8일 ~ 3월21일</li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0);" class="layer_close"></a>
+                </div>
+                <div class="layer_body">
+                    <div class="event_2101">
+                        <ul>
+                            <li>
+                                <img src="img/event/event_01.png">
+                            </li>
+                            <li>
+                                <img src="img/event/event_02.png">
+                            </li>
+                            <li>
+                                <img src="img/event/event_03.png">
+                            </li>
+                            <li>
+                                <img src="img/event/event_04.png">
+                            </li>
+                            <li>
+                                <img src="img/event/event_05.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="download_link">
+                    <ul>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.playtong.pass">안드로이드 다운로드</a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/app/id1494812127">아이폰 다운로드</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
