@@ -1,643 +1,664 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Facebook Pixel Code -->
-    <script src="https://connect.facebook.net/signals/config/617817285466833?v=2.9.21&amp;r=stable" async=""></script>
-    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '617817285466833');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=617817285466833&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGT23PV5MF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Facebook Pixel Code -->
+  <script src="https://connect.facebook.net/signals/config/617817285466833?v=2.9.21&amp;r=stable" async=""></script>
+  <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '617817285466833');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=617817285466833&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGT23PV5MF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-MGT23PV5MF');
-    </script>
-    <!-- ./Global site tag (gtag.js) - Google Analytics -->
-    <!-- Kakao Pixel Code -->
-    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
-    <script type="text/javascript">
-        kakaoPixel('3765958309401575314').pageView();
-    </script>
-    <!-- ./Kakao Pixel Code -->
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <meta name="msapplication-tooltip" content="센드, Send, 간편한 편의점 송금">
-    <meta name="naver-site-verification" content="4286f823f3df4aa2ac74372945c54098215d63ca" />
-    <meta property="og:locale" content="ko_KR"/>
-    <meta property="og:locale:alternate" content="ko_KR"/>
-    <meta property="og:locale:alternate" content="ja_JP"/>
-    <meta property="og:locale:alternate" content="en_US"/>
-    <meta property="og:title" content="센드, Send, 간편한 편의점 송금"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="센드, Send, 간편한 편의점 송금">
-    <meta property="og:image" content="img/send_app_icon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
-    <meta property="og:url" content="http://send-money.co.kr"/>
-    <link rel="canonical" href="http://send-money.co.kr">
-    <meta name="keywords" content="센드, 편의점송금, SEND, 간편송금, 연락처송금, 무통장입금, 무통장송금, 무카드송금, 무카드입금, 가상계좌입금"/>
-    <meta name="description" content="24시간 편의점 간편송금 센드(SEND)"/>
-    <meta name="robots" content="index, follow">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="24시간 편의점 간편송금 센드(SEND)">
-    <meta name="twitter:description" content="24시간 편의점 간편송금 센드(SEND)">
-    <meta name="twitter:image" content="img/send_app_icon.png">
-    <meta name="twitter:domain" content="http://send-money.co.kr">
+    gtag('config', 'G-MGT23PV5MF');
+  </script>
+  <!-- ./Global site tag (gtag.js) - Google Analytics -->
+  <!-- Kakao Pixel Code -->
+  <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+  <script type="text/javascript">
+    kakaoPixel('3765958309401575314').pageView();
+  </script>
+  <!-- ./Kakao Pixel Code -->
+
+  <meta name="msapplication-tooltip" content="센드, Send, 간편한 편의점 송금">
+  <meta name="naver-site-verification" content="4286f823f3df4aa2ac74372945c54098215d63ca" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="센드, Send, 간편한 편의점 송금" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="센드, Send, 간편한 편의점 송금">
+  <meta property="og:image" content="img/send_app_icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:url" content="http://send-money.co.kr" />
+  <link rel="canonical" href="http://send-money.co.kr">
+  <meta name="keywords" content="센드, 편의점송금, SEND, 간편송금, 연락처송금, 무통장입금, 무통장송금, 무카드송금, 무카드입금, 가상계좌입금" />
+  <meta name="description" content="24시간 편의점 간편송금 센드(SEND)" />
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="24시간 편의점 간편송금 센드(SEND)">
+  <meta name="twitter:description" content="24시간 편의점 간편송금 센드(SEND)">
+  <meta name="twitter:image" content="img/send_app_icon.png">
+  <meta name="twitter:domain" content="http://send-money.co.kr">
 
 
-    <title>센드, Send, 간편한 편의점 송금- SEND </title>
-    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:image" content="img/send_app_icon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
+  <title>센드, Send, 간편한 편의점 송금- SEND </title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:image" content="img/send_app_icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
 
-    <link href="css/style_v2.css" rel="stylesheet">
-    <link href="css/swiper.min.css" rel="stylesheet">
+  <link href="css/style_v2.css" rel="stylesheet">
+  <link href="css/swiper.min.css" rel="stylesheet">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/swiper.min.js"></script>
 
 </head>
+
 <body>
-<div class="wrap">
+  <div class="wrap">
     <div class="banner">
-        <div class="banner_wrap">
-            <div class="event_banner"></div>
-            <a href="javascript:void(0);" class="event_close"></a>
-        </div>
+      <div class="banner_wrap">
+        <div class="event_banner"></div>
+        <a href="javascript:void(0);" class="event_close"></a>
+      </div>
     </div>
     <div class="section head top">
-        <div class="header">
-            <div class="header_wrap dl">
-                <a href="index.html" class="logo"></a>
-                <a href="javascript:void(0);" class="nav_menu"></a>
-                <div class="navigation">
-                    <a href="index.html" class="nav_a">안내</a>
-                    <a href="javascript:eventOpen();" class="nav_b">이벤트</a>
-                    <a href="faq.html" class="nav_c">FAQ</a>
-                    <a href="javascript:void(0);" class="nav_d">1:1 문의</a>
-                </div>
-            </div>
+      <div class="header">
+        <div class="header_wrap dl">
+          <a href="index.html" class="logo"></a>
+          <a href="javascript:void(0);" class="nav_menu"></a>
+          <div class="navigation">
+            <a href="index.html" class="nav_a">안내</a>
+            <a href="javascript:eventOpen();" class="nav_b">이벤트</a>
+            <a href="faq.html" class="nav_c">FAQ</a>
+            <a href="javascript:void(0);" class="nav_d">1:1 문의</a>
+          </div>
         </div>
-        <div class="section_body top dl">
-            <div class="sec_text f_l">
-                <h1 class="t_w">은행 안가고<br>편의점에서 365일 24시간<br>센드로 무통장입금하기!</h1>
-                <div class="dl_wrap dl">
-                    <a href="https://play.google.com/store/apps/details?id=com.playtong.pass" target="_blank">
-                        <img src="img/dl_google.png" alt="Play Store">
-                    </a>
-                    <a href="https://apps.apple.com/app/id1494812127" target="_blank">
-                        <img src="img/dl_apple.png" alt="App Store">
-                    </a>
-                </div>
-            </div>
-            <div class="vis_a">
-                <img src="img/vis_a.png" alt="은행 안가고 편의점에서 365일 24시간 Send 센드로 무통장입금하기!">
-            </div>
-            <div class="sec_text f_l">
-                <div class="good_wrap">
-                    <h3># Send 센드만의 장점</h3>
-                    <div class="good_list">
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_1.png" alt="14세미만 미자도 이용가능">
-                            </div>
-                            <span>초딩도 이용가능</span>
-                        </div>
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_2.png" alt="1천원이상, 10원단위도 충전">
-                            </div>
-                            <span>핸드폰만으로 회원가입</span>
-                        </div>
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_3.png" alt="송금내역 프라이버시 보장">
-                            </div>
-                            <span>충전은 최초1천원10원단위</span>
-                        </div>
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_4.png" alt="가상계좌도 입금 가능">
-                            </div>
-                            <span>잔액송금은 1원도 가능</span>
-                        </div>
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_5.png" alt="충전해두면 언제든 송금">
-                            </div>
-                            <span>가상계좌도 입금가능</span>
-                        </div>
-                        <div class="good_item dl">
-                            <div class="good_num">
-                                <img src="img/good_num_6.png" alt="핸드폰만 있어도 회원가입">
-                            </div>
-                            <span>이용내역 문자발송 없음</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="section_body top dl">
+        <div class="sec_text f_l">
+          <h1 class="t_w">은행 안가고<br>편의점에서 365일 24시간<br>센드로 무통장입금하기!</h1>
+          <div class="dl_wrap dl">
+            <a href="https://play.google.com/store/apps/details?id=com.playtong.pass" target="_blank">
+              <img src="img/dl_google.png" alt="Play Store">
+            </a>
+            <a href="https://apps.apple.com/app/id1494812127" target="_blank">
+              <img src="img/dl_apple.png" alt="App Store">
+            </a>
+          </div>
         </div>
+        <div class="vis_a">
+          <img src="img/vis_a.png" alt="은행 안가고 편의점에서 365일 24시간 Send 센드로 무통장입금하기!">
+        </div>
+        <div class="sec_text f_l">
+          <div class="good_wrap">
+            <h3># Send 센드만의 장점</h3>
+            <div class="good_list">
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_1.png" alt="14세미만 미자도 이용가능">
+                </div>
+                <span>초딩도 이용가능</span>
+              </div>
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_2.png" alt="1천원이상, 10원단위도 충전">
+                </div>
+                <span>핸드폰만으로 회원가입</span>
+              </div>
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_3.png" alt="송금내역 프라이버시 보장">
+                </div>
+                <span>충전은 최초1천원10원단위</span>
+              </div>
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_4.png" alt="가상계좌도 입금 가능">
+                </div>
+                <span>잔액송금은 1원도 가능</span>
+              </div>
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_5.png" alt="충전해두면 언제든 송금">
+                </div>
+                <span>가상계좌도 입금가능</span>
+              </div>
+              <div class="good_item dl">
+                <div class="good_num">
+                  <img src="img/good_num_6.png" alt="핸드폰만 있어도 회원가입">
+                </div>
+                <span>이용내역 문자발송 없음</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section v_b">
-        <div class="section_body dl">
-            <div class="sec_text f_c">
-                <h1 class="t_b">ATM입금 아님!<br>CU 계산대에서 현금만 내면 송금OK!</h1>
-                <div class="v_b_title">Send 센드의 No 선언!</div>
-            </div>
-            <div class="v_b_wrap dl">
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_3.png" alt="나이제한 NO">
-                    </div>
-                    <span>나이제한 NO</span>
-                </div>
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_4.png" alt="문자통보 NO">
-                    </div>
-                    <span>문자통보 NO</span>
-                </div>
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_2.png" alt="은행계좌/카드 NO">
-                    </div>
-                    <span>은행계좌/카드 NO</span>
-                </div>
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_1.png" alt="공인 인증서 NO">
-                    </div>
-                    <span>공인 인증서 NO</span>
-                </div>
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_5.png" alt="입금은행 제한 NO">
-                    </div>
-                    <span>입금은행 제한 NO</span>
-                </div>
-                <div class="v_b_item dl">
-                    <div class="v_b_icon">
-                        <img src="img/v_b_icon_6.png" alt="이용시간 제한 NO">
-                    </div>
-                    <span>이용시간 제한 NO</span>
-                </div>
-            </div>
+      <div class="section_body dl">
+        <div class="sec_text f_c">
+          <h1 class="t_b">ATM입금 아님!<br>CU 계산대에서 현금만 내면 송금OK!</h1>
+          <div class="v_b_title">Send 센드의 No 선언!</div>
         </div>
+        <div class="v_b_wrap dl">
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_3.png" alt="나이제한 NO">
+            </div>
+            <span>나이제한 NO</span>
+          </div>
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_4.png" alt="문자통보 NO">
+            </div>
+            <span>문자통보 NO</span>
+          </div>
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_2.png" alt="은행계좌/카드 NO">
+            </div>
+            <span>은행계좌/카드 NO</span>
+          </div>
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_1.png" alt="공인 인증서 NO">
+            </div>
+            <span>공인 인증서 NO</span>
+          </div>
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_5.png" alt="입금은행 제한 NO">
+            </div>
+            <span>입금은행 제한 NO</span>
+          </div>
+          <div class="v_b_item dl">
+            <div class="v_b_icon">
+              <img src="img/v_b_icon_6.png" alt="이용시간 제한 NO">
+            </div>
+            <span>이용시간 제한 NO</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section v_c">
-        <div class="section_body dl no_pad">
-            <div class="slide_nav dl">
-                <div class="slide_title" id="guide">센드 이용법</div>
-                <div class="slide_scroll">
-                    <ul class="dl">
-                        <li>
-                            <a href="javascript:void(0);" rel="1" id="s_1" class="on">현금충전</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" rel="2" id="s_2">잔액에서 무통장입금</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" rel="3" id="s_3">잔액에서 연락처송금</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" rel="4" id="s_4">CU에서 무통장입금</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" rel="5" id="s_5">CU결제</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="slider_wrap dl">
-                <div class="swiper-container swiper-container-h">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="swiper-container-sub s_1 slider_1">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_1_01.png" class="first_img">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_1_02.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_1_03.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider_faq_wrap">
-                                            <div class="slider_faq">
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">미성년자도 회원가입 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">나이제한이 없습니다. 다만 14세미만은 이용한도가 제한됩니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">CU편의점에서만 충전할수 있나요?</div>
-                                                    <div class="slider_faq_item_a">네. 맞습니다.  그러나 충전후에는 장소, 시간에 상관없이 송금할 수 있어요.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">CU직원이 센드를 몰라요.</div>
-                                                    <div class="slider_faq_item_a">충전 바코드 위 CU직원가이드의 ‘+보기’를 클릭해 보여주세요.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">1원도 충전이 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">충전은 CU송금과 동일하게 최소 1천원 이상이면 10원단위까지 가능합니다. 충전 후에는 1원단위도 송금이 가능해요.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">충전후 곧바로 사용가능하나요?</div>
-                                                    <div class="slider_faq_item_a">아니요. 20분 쿨링타임이 지나야 송금, 결제가 가능합니다.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-pagination s_1"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-container-sub s_2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_01.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_02.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_03.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_04.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_05.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_06.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_07.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_08.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_2_09.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider_faq_wrap">
-                                            <div class="slider_faq">
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">어느 쇼핑몰이든 다 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">‘무통장입금’ 결제가 가능한 쇼핑몰의 경우 모두 가능합니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">송금 후 문자가 전송되나요?</div>
-                                                    <div class="slider_faq_item_a">센드는 별도의 문자로 이용내역을 통보하지 않습니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">수수료는 얼마인가요?</div>
-                                                    <div class="slider_faq_item_a">충전은 무료지만 송금할 때 수수료를 내야해요. 10만원까지 500원, 초과하면 1,000원입니다. 이를 감안해서 충전하세요.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-pagination s_2"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-container-sub s_3">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_01.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_02.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_03.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_04.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_05.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_06.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_07.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_08.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_3_09.png">
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-pagination s_3"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-container-sub s_4">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_01.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_02.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_03.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_04.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_05.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_06.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_4_07.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider_faq_wrap">
-                                            <div class="slider_faq">
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">1원도 송금이 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">CU송금은 충전과 동일하게 최소 1천원 이상이면 10원단위까지 가능합니다. 충전 후에는 1원단위도 송금이 가능해요.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">송금을 했는데 입금확인이 안된대요.</div>
-                                                    <div class="slider_faq_item_a">CU송금을 접수하면 쿨링타임(20분) 이후에 입금이 자동 실행됩니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">어느 쇼핑몰이든 다 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">‘무통장입금’ 결제가 가능한 쇼핑몰의 경우 모두 가능합니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">미성년자도 회원가입 가능한가요?</div>
-                                                    <div class="slider_faq_item_a">나이제한이 없습니다. 다만 14세미만은 이용한도가 제한됩니다.</div>
-                                                </div>
-                                                <div class="slider_faq_item">
-                                                    <div class="slider_faq_item_q">송금 후 문자가 전송되나요?</div>
-                                                    <div class="slider_faq_item_a">센드는 별도의 문자로 이용내역을 통보하지 않습니다.</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-pagination s_4"></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-container-sub s_5">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_5_01.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_5_02.png">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="img/slide/s_5_03.png">
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-pagination s_5"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next swiper-button-black arrow"></div>
-                    <div class="swiper-button-prev swiper-button-black arrow"></div>
-                </div>
-            </div>
+      <div class="section_body dl no_pad">
+        <div class="slide_nav dl">
+          <div class="slide_title" id="guide">센드 이용법</div>
+          <div class="slide_scroll">
+            <ul class="dl">
+              <li>
+                <a href="javascript:void(0);" rel="1" id="s_1" class="on">현금충전</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" rel="2" id="s_2">잔액에서 무통장입금</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" rel="3" id="s_3">잔액에서 연락처송금</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" rel="4" id="s_4">CU에서 무통장입금</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" rel="5" id="s_5">CU결제</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="slider_wrap dl">
+          <div class="swiper-container swiper-container-h">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-container-sub s_1 slider_1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_1_01.png" class="first_img">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_1_02.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_1_03.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider_faq_wrap">
+                        <div class="slider_faq">
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">미성년자도 회원가입 가능한가요?</div>
+                            <div class="slider_faq_item_a">나이제한이 없습니다. 다만 14세미만은 이용한도가 제한됩니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">CU편의점에서만 충전할수 있나요?</div>
+                            <div class="slider_faq_item_a">네. 맞습니다. 그러나 충전후에는 장소, 시간에 상관없이 송금할 수 있어요.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">CU직원이 센드를 몰라요.</div>
+                            <div class="slider_faq_item_a">충전 바코드 위 CU직원가이드의 ‘+보기’를 클릭해 보여주세요.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">1원도 충전이 가능한가요?</div>
+                            <div class="slider_faq_item_a">충전은 CU송금과 동일하게 최소 1천원 이상이면 10원단위까지 가능합니다. 충전 후에는 1원단위도 송금이
+                              가능해요.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">충전후 곧바로 사용가능하나요?</div>
+                            <div class="slider_faq_item_a">아니요. 20분 쿨링타임이 지나야 송금, 결제가 가능합니다.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination s_1"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container-sub s_2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_02.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_03.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_04.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_05.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_06.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_07.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_08.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_2_09.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider_faq_wrap">
+                        <div class="slider_faq">
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">어느 쇼핑몰이든 다 가능한가요?</div>
+                            <div class="slider_faq_item_a">‘무통장입금’ 결제가 가능한 쇼핑몰의 경우 모두 가능합니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">송금 후 문자가 전송되나요?</div>
+                            <div class="slider_faq_item_a">센드는 별도의 문자로 이용내역을 통보하지 않습니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">수수료는 얼마인가요?</div>
+                            <div class="slider_faq_item_a">충전은 무료지만 송금할 때 수수료를 내야해요. 10만원까지 500원, 초과하면 1,000원입니다. 이를
+                              감안해서 충전하세요.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination s_2"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container-sub s_3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_02.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_03.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_04.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_05.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_06.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_07.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_08.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_3_09.png">
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination s_3"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container-sub s_4">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_02.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_03.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_04.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_05.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_06.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_4_07.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider_faq_wrap">
+                        <div class="slider_faq">
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">1원도 송금이 가능한가요?</div>
+                            <div class="slider_faq_item_a">CU송금은 충전과 동일하게 최소 1천원 이상이면 10원단위까지 가능합니다. 충전 후에는 1원단위도 송금이
+                              가능해요.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">송금을 했는데 입금확인이 안된대요.</div>
+                            <div class="slider_faq_item_a">CU송금을 접수하면 쿨링타임(20분) 이후에 입금이 자동 실행됩니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">어느 쇼핑몰이든 다 가능한가요?</div>
+                            <div class="slider_faq_item_a">‘무통장입금’ 결제가 가능한 쇼핑몰의 경우 모두 가능합니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">미성년자도 회원가입 가능한가요?</div>
+                            <div class="slider_faq_item_a">나이제한이 없습니다. 다만 14세미만은 이용한도가 제한됩니다.</div>
+                          </div>
+                          <div class="slider_faq_item">
+                            <div class="slider_faq_item_q">송금 후 문자가 전송되나요?</div>
+                            <div class="slider_faq_item_a">센드는 별도의 문자로 이용내역을 통보하지 않습니다.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination s_4"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-container-sub s_5">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_5_01.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_5_02.png">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/slide/s_5_03.png">
+                    </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-pagination s_5"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-black arrow"></div>
+            <div class="swiper-button-prev swiper-button-black arrow"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section v_d">
-        <div class="section_body dl">
-            <div class="sec_text f_c">
-                <h1 class="t_b">Send 센드 활용사례</h1>
-            </div>
-            <div class="v_d_wrap dl">
-                <div class="v_d_item dl">
-                    <div class="v_d_icon">
-                        <img src="img/v_d_icon_2.png" alt="은행 마감 때문에… 핫딜 상품구매가 힘들었다면 센드로…">
-                    </div>
-                    <p>방과후 은행마감 땜에,<br>핫딜구매가 힘들었다면 센드로…</p>
-                </div>
-                <div class="v_d_item dl">
-                    <div class="v_d_icon">
-                        <img src="img/v_d_icon_1.png" alt="휴일과 야간, 긴급한 현금 송금">
-                    </div>
-                    <p>휴일과 야간,<br>긴급한 현금 송금</p>
-                </div>
-                <div class="v_d_item dl">
-                    <div class="v_d_icon">
-                        <img src="img/v_d_icon_3.png" alt="공연예매가 시작되는 밤 12시, 은행계좌가 없어도 센드라면 예매가능">
-                    </div>
-                    <p>공연예매가 시작되는<br>밤 12시, 은행계좌가 없어도<br>센드라면 예매가능</p>
-                </div>
-                <div class="v_d_item dl">
-                    <div class="v_d_icon">
-                        <img src="img/v_d_icon_4.png" alt="은행계좌 없는 외국인도 센드라면 온라인쇼핑몰 이용이 가능!!">
-                    </div>
-                    <p>은행계좌 없는 외국인도<br>센드라면 온라인쇼핑몰<br>이용 가능!!</p>
-                </div>
-            </div>
+      <div class="section_body dl">
+        <div class="sec_text f_c">
+          <h1 class="t_b">Send 센드 활용사례</h1>
         </div>
+        <div class="v_d_wrap dl">
+          <div class="v_d_item dl">
+            <div class="v_d_icon">
+              <img src="img/v_d_icon_2.png" alt="은행 마감 때문에… 핫딜 상품구매가 힘들었다면 센드로…">
+            </div>
+            <p>방과후 은행마감 땜에,<br>핫딜구매가 힘들었다면 센드로…</p>
+          </div>
+          <div class="v_d_item dl">
+            <div class="v_d_icon">
+              <img src="img/v_d_icon_1.png" alt="휴일과 야간, 긴급한 현금 송금">
+            </div>
+            <p>휴일과 야간,<br>긴급한 현금 송금</p>
+          </div>
+          <div class="v_d_item dl">
+            <div class="v_d_icon">
+              <img src="img/v_d_icon_3.png" alt="공연예매가 시작되는 밤 12시, 은행계좌가 없어도 센드라면 예매가능">
+            </div>
+            <p>공연예매가 시작되는<br>밤 12시, 은행계좌가 없어도<br>센드라면 예매가능</p>
+          </div>
+          <div class="v_d_item dl">
+            <div class="v_d_icon">
+              <img src="img/v_d_icon_4.png" alt="은행계좌 없는 외국인도 센드라면 온라인쇼핑몰 이용이 가능!!">
+            </div>
+            <p>은행계좌 없는 외국인도<br>센드라면 온라인쇼핑몰<br>이용 가능!!</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section v_e">
-        <div class="section_body dl">
-            <div class="sec_text f_c">
-                <h1 class="t_b">이용이 불편한 ATM입금은 가라~</h1>
-                <h2>쉬운 무통장입금, Send 센드!<br>누구에게나 송금은 쉬워야 합니다.</h2>
-            </div>
-            <div class="v_e_img">
-                <img src="img/v_e_img.png" alt="이용이 불편한 ATM입금은 가라~">
-            </div>
+      <div class="section_body dl">
+        <div class="sec_text f_c">
+          <h1 class="t_b">이용이 불편한 ATM입금은 가라~</h1>
+          <h2>쉬운 무통장입금, Send 센드!<br>누구에게나 송금은 쉬워야 합니다.</h2>
         </div>
+        <div class="v_e_img">
+          <img src="img/v_e_img.png" alt="이용이 불편한 ATM입금은 가라~">
+        </div>
+      </div>
     </div>
     <div class="section v_f">
-        <div class="section_body dl">
-            <div class="sec_text f_c">
-                <h1 class="t_b">Send센드 이용 주의사항</h1>
-            </div>
-            <div class="v_f_wrap">
-                <div class="v_f_item">
-                    <div class="v_f_title">CU직원이 Send센드를 잘 모를 땐…</div>
-                    <div class="v_f_content">메인화면 상단의 '?' 클릭후 맨아래 'CU직원이...'을 다시 클릭해 보여주삼.</div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">충전(혹은 CU송금)은 1,000원이상, 10원단위 가능</div>
-                    <div class="v_f_content">충전, 혹은 CU에서 직송금할땐 최소 1천원, 10원단위로 가능해요.<br>예를들어 1000원, 1010원, 1020원도 충전과 CU송금이 됩니다.</div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">잔액송금은 1원도 가능</div>
-                    <div class="v_f_content">충전후엔 1원도 송금할 수 있어요.</div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">쿨링타임에 대해</div>
-                    <div class="v_f_content">충전 혹은 CU송금 할땐 바코드 리딩후 20분간 얼음 땡!<br>
-                        20분뒤부턴 모든게 즉시 가능하죠.<br>
-                        충전후 즉시 잔액송금을 하면 충전20분뒤 자동송금돼요.<br>
-                        물론 CU송금도 20분뒤 자동송금됩니다.<br>
-                        충전 혹은 CU송금 후 또다른 충전이나 CU송금은 20분간 안됩니다.
-                    </div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">이용한도를 높이려면…</div>
-                    <div class="v_f_content">브론즈 회원은 본인인증(실버)을 하면 사용한도가 올라가요.<br>
-                        19세이상 실버회원은 실적에 따라 송금한도를 1회50만원까지 높여드려요.<br>
-                        단, 브론즈회원 중 14세미만은 본인인증(실버)회원이 될 수 없어요.
-                    </div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">송금이 안되는 시간대</div>
-                    <div class="v_f_content">은행 전산점검 시간인 밤 11시40분~12시15분까지 송금을 할수 없어요.(충전은 가능)<br>
-                        매월 두번째 일요일 새벽 1시~5시까지 정기점검 시간대에도 송금이용이 안돼요.(충전은 가능)
-                    </div>
-                </div>
-                <div class="v_f_item">
-                    <div class="v_f_title">사용하다 궁금한게 있으면…</div>
-                    <div class="v_f_content">평일 업무시간 중 1:1문의나 전화( )를 하면 즉시 답변을 드립니다.<br>
-                        휴일이나 밤시간대는 1:1문의를 이용, 질문을 해 놓으면 영업시간 중 답변을 드립니다.
-                    </div>
-                </div>
-            </div>
-            <a href="faq.html" class="more_faq">FAQ 더보기</a>
+      <div class="section_body dl">
+        <div class="sec_text f_c">
+          <h1 class="t_b">Send센드 이용 주의사항</h1>
         </div>
+        <div class="v_f_wrap">
+          <div class="v_f_item">
+            <div class="v_f_title">CU직원이 Send센드를 잘 모를 땐…</div>
+            <div class="v_f_content">메인화면 상단의 '?' 클릭후 맨아래 'CU직원이...'을 다시 클릭해 보여주삼.</div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">충전(혹은 CU송금)은 1,000원이상, 10원단위 가능</div>
+            <div class="v_f_content">충전, 혹은 CU에서 직송금할땐 최소 1천원, 10원단위로 가능해요.<br>예를들어 1000원, 1010원, 1020원도 충전과 CU송금이 됩니다.
+            </div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">잔액송금은 1원도 가능</div>
+            <div class="v_f_content">충전후엔 1원도 송금할 수 있어요.</div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">쿨링타임에 대해</div>
+            <div class="v_f_content">충전 혹은 CU송금 할땐 바코드 리딩후 20분간 얼음 땡!<br>
+              20분뒤부턴 모든게 즉시 가능하죠.<br>
+              충전후 즉시 잔액송금을 하면 충전20분뒤 자동송금돼요.<br>
+              물론 CU송금도 20분뒤 자동송금됩니다.<br>
+              충전 혹은 CU송금 후 또다른 충전이나 CU송금은 20분간 안됩니다.
+            </div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">이용한도를 높이려면…</div>
+            <div class="v_f_content">브론즈 회원은 본인인증(실버)을 하면 사용한도가 올라가요.<br>
+              19세이상 실버회원은 실적에 따라 송금한도를 1회50만원까지 높여드려요.<br>
+              단, 브론즈회원 중 14세미만은 본인인증(실버)회원이 될 수 없어요.
+            </div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">송금이 안되는 시간대</div>
+            <div class="v_f_content">은행 전산점검 시간인 밤 11시40분~12시15분까지 송금을 할수 없어요.(충전은 가능)<br>
+              매월 두번째 일요일 새벽 1시~5시까지 정기점검 시간대에도 송금이용이 안돼요.(충전은 가능)
+            </div>
+          </div>
+          <div class="v_f_item">
+            <div class="v_f_title">사용하다 궁금한게 있으면…</div>
+            <div class="v_f_content">평일 업무시간 중 1:1문의나 전화( )를 하면 즉시 답변을 드립니다.<br>
+              휴일이나 밤시간대는 1:1문의를 이용, 질문을 해 놓으면 영업시간 중 답변을 드립니다.
+            </div>
+          </div>
+        </div>
+        <a href="faq.html" class="more_faq">FAQ 더보기</a>
+      </div>
     </div>
     <div class="section footer dl">
-        <div class="section_body dl">
-            <div class="logo_b">
-                <img src="img/logo_g.png" alt="Send, 간편한 편의점 송금">
-            </div>
-            <div class="footer_wrap">
-                <div class="terms">
-                    <a href="terms.html">서비스 이용약관</a>
-                    <a href="policy.html">개인정보처리방침</a>
-                    <a href="faq.html">FAQ</a>
-                </div>
-                <h3>(주)통통</h3>
-                <ul>
-                    <li>사업자 등록번호 120-81-90256<span>|</span>대표이사 최상길<span class="m_n">|</span><br class="m">주소 서울시 강남구 언주로170길16, 2층<span>|</span>고객센터 1877-1255</li>
-                    <li>Copyright tongtong corp, All rights reserved</li>
-                </ul>
-            </div>
+      <div class="section_body dl">
+        <div class="logo_b">
+          <img src="img/logo_g.png" alt="Send, 간편한 편의점 송금">
         </div>
+        <div class="footer_wrap">
+          <div class="terms">
+            <a href="terms.html">서비스 이용약관</a>
+            <a href="policy.html">개인정보처리방침</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <h3>(주)통통</h3>
+          <ul>
+            <li>사업자 등록번호 120-81-90256<span>|</span>대표이사 최상길<span class="m_n">|</span><br class="m">주소 서울시 강남구 언주로170길16,
+              2층<span>|</span>고객센터 1877-1255</li>
+            <li>Copyright tongtong corp, All rights reserved</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="layer_popup event">
-        <div class="layer_bg"></div>
-        <div class="layer_wrap">
-            <div class="layer_content">
-                <div class="layer_title dl">
-                    <div class="lt_cont">
-                        <ul>
-                            <li>1원초대 & 충전 이벤트</li>
-                            <li>2월8일 ~ 3월21일</li>
-                        </ul>
-                    </div>
-                    <a href="javascript:void(0);" class="layer_close"></a>
-                </div>
-                <div class="layer_body">
-                    <div class="event_2101">
-                        <ul>
-                            <li>
-                                <img src="img/event/event_01.png">
-                            </li>
-                            <li>
-                                <img src="img/event/event_02.png">
-                            </li>
-                            <li>
-                                <img src="img/event/event_03.png">
-                            </li>
-                            <li>
-                                <img src="img/event/event_04.png">
-                            </li>
-                            <li>
-                                <img src="img/event/event_05.png">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="download_link">
-                    <ul>
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.playtong.pass">안드로이드 다운로드</a>
-                        </li>
-                        <li>
-                            <a href="https://apps.apple.com/app/id1494812127">아이폰 다운로드</a>
-                        </li>
-                    </ul>
-                </div>
+      <div class="layer_bg"></div>
+      <div class="layer_wrap">
+        <div class="layer_content">
+          <div class="layer_title dl">
+            <div class="lt_cont">
+              <ul>
+                <li>1원초대 & 충전 이벤트</li>
+                <li>2월8일 ~ 3월21일</li>
+              </ul>
             </div>
+            <a href="javascript:void(0);" class="layer_close"></a>
+          </div>
+          <div class="layer_body">
+            <div class="event_2101">
+              <ul>
+                <li>
+                  <img src="img/event/event_01.png">
+                </li>
+                <li>
+                  <img src="img/event/event_02.png">
+                </li>
+                <li>
+                  <img src="img/event/event_03.png">
+                </li>
+                <li>
+                  <img src="img/event/event_04.png">
+                </li>
+                <li>
+                  <img src="img/event/event_05.png">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="download_link">
+            <ul>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.playtong.pass">안드로이드 다운로드</a>
+              </li>
+              <li>
+                <a href="https://apps.apple.com/app/id1494812127">아이폰 다운로드</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="layer_popup event_popup" id="event_pop">
-        <div class="layer_bg"></div>
-        <div class="popup_wrap">
-            <div class="pop_content">
-                <img src="img/event/event_pop.png" class="event_pop_img">
-            </div>
-            <div class="pop_footer dl">
-                <a href="javascript:void(0);" class="pop_today">오늘은 그만보기</a>
-                <a href="javascript:void(0);" class="pop_close">닫기</a>
-            </div>
+      <div class="layer_bg"></div>
+      <div class="popup_wrap">
+        <div class="pop_content">
+          <img src="img/event/event_pop.png" class="event_pop_img">
         </div>
+        <div class="pop_footer dl">
+          <a href="javascript:void(0);" class="pop_today">오늘은 그만보기</a>
+          <a href="javascript:void(0);" class="pop_close">닫기</a>
+        </div>
+      </div>
     </div>
 
-</div>
+  </div>
 
 </body>
+
 </html>
